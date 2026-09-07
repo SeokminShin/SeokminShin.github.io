@@ -1,0 +1,21 @@
+# https://www.robotstxt.org/robotstxt.html
+#
+# This domain serves the research portfolio at /portfolio/; the root is a
+# redirect to it. GitHub Pages publishes this repository's root directly rather
+# than a build output, so the source of a 2024 React experiment is still
+# reachable (/src/App.js, /public/index.html, /package.json, /Readme.md). Those
+# are excluded below so they cannot be indexed or compete with the portfolio in
+# search results.
+#
+# Note that this only asks crawlers not to fetch them - the files remain
+# publicly accessible. Deleting the stale experiment from the repository is the
+# actual fix.
+
+User-agent: *
+Allow: /
+Disallow: /src/
+Disallow: /public/
+Disallow: /package.json
+Disallow: /Readme.md
+
+Sitemap: https://seokminshin.github.io/portfolio/sitemap.xml
